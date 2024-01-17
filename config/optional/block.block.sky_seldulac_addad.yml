@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sky_seldulac
+  module:
+    - smallads
+id: sky_seldulac_addad
+theme: sky_seldulac
+region: sidebar_first
+weight: 10
+provider: smallads
+plugin: add_ad_block
+settings:
+  id: add_ad_block
+  label: 'Place a listing'
+  provider: smallads
+  label_display: visible
+visibility: { }
+

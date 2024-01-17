@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - aggregator
+  theme:
+    - sky_seldulac
+id: sky_seldulac_aggregatorfeed2
+theme: sky_seldulac
+region: sidebar_first
+weight: 50
+provider: cforge
+plugin: aggregator_feed_block
+settings:
+  id: aggregator_feed_block
+  label: ''
+  provider: aggregator
+  label_display: '1'
+  block_count: 3
+  feed: '2'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/news*"
+    negate: false
+    context_mapping: {  }
+

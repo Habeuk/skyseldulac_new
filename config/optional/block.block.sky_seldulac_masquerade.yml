@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - masquerade
+  theme:
+    - sky_seldulac
+id: sky_seldulac_masquerade
+theme: sky_seldulac
+region: sidebar_first
+weight: -10
+provider: cforge
+plugin: masquerade
+settings:
+  id: masquerade
+  label: Masquerade
+  provider: masquerade
+  label_display: visible
+visibility: {  }
+

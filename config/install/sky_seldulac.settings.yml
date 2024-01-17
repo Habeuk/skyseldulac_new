@@ -1,0 +1,5 @@
+title_hide: false
+logo:
+  use_default: false
+  path: "profiles/cforge/assets/logo.png"
+main: true

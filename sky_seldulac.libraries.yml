@@ -1,0 +1,11 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      sky_seldulac.css: {}
+
+menu-styling:
+  version: VERSION
+  css:
+    theme:
+      css/themes/hbk-menu.css: {}

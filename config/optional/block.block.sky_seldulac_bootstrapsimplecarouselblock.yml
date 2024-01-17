@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - bootstrap_simple_carousel
+  theme:
+    - sky_seldulac
+id: sky_seldulac_bootstrapsimplecarouselblock
+theme: sky_seldulac
+region: content
+weight: 0
+provider: null
+plugin: bootstrap_simple_carousel_block
+settings:
+  id: bootstrap_simple_carousel_block
+  label: 'Bootstrap simple carousel block'
+  provider: bootstrap_simple_carousel
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+

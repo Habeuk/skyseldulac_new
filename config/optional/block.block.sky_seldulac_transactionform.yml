@@ -1,0 +1,27 @@
+uuid: 1e28bdee-7f59-49d0-ada1-3bf05b952147
+langcode: en
+status: true
+dependencies:
+  module:
+    - mcapi_forms
+    - system
+  theme:
+    - sky_seldulac
+id: sky_seldulac_transactionform
+theme: sky_seldulac
+region: sidebar_first
+weight: 4
+provider: cforge
+plugin: mc_form
+settings:
+  id: mc_form
+  label: 'Bill a member'
+  label_display: visible
+  provider: mcapi_forms
+  editform_type: standard_bill
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "transactions\r\nmembers\r\nuser*"

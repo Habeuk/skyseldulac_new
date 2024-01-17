@@ -1,0 +1,18 @@
+langcode: en
+status: true
+id: sky_seldulac_userlogin
+theme: sky_seldulac
+region: sidebar_first
+weight: -10
+provider: cforge
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: 'user/reset*'

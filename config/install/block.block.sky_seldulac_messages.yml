@@ -1,0 +1,14 @@
+langcode: en
+status: true
+id: sky_seldulac_messages
+theme: sky_seldulac
+region: top
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: { }

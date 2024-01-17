@@ -1,0 +1,38 @@
+{# Vérifier si le menu a des éléments #}
+
+{{attach_library("sky_seldulac/menu-styling")}}
+{% if items %}
+	<input id="main-menu-hamburger" name="hamburger-box" type="checkbox">
+	<label for="main-menu-hamburger" class="main-menu-hamburger">
+
+		<span class="hamburger-row"></span>
+	</label>
+	<div class="main-menu">
+		<ul
+			class="menu">
+			{# Boucle sur les éléments du menu #}
+			{% for item in items %}
+				<li{{item.attributes.addClass([item.is_expanded?'expanded',"menu-item"])}}>
+					{# Afficher le lien de l'élément du menu #}
+					{# Vérifier si l'élément du menu a des sous-menus #}
+						{% if item.below %}
+							<a class="expanded"> {{item.title}}</a>
+						<ul
+							class="drop-menu">
+							{# Boucle sur les sous-menus #}
+							{% for subItem in item.below %}
+								<li{{subItem.attributes}}
+									{{item.attributes.addclass(["submenu-item"])}}>
+									{# Afficher le lien du sous-menu #}
+									{{ link(subItem.title, subItem.url) }}
+								</li>
+							{% endfor %}
+						</ul>
+					{% else %}
+						{{ link(item.title, item.url) }}
+					{% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+{% endif %}

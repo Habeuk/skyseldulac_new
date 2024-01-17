@@ -1,0 +1,15 @@
+langcode: en
+status: true
+id: sky_seldulac_primaryadminactions
+theme: sky_seldulac
+region: top
+weight: -9
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
+

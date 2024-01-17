@@ -1,0 +1,22 @@
+name: Hamlets
+description: The default theme for Community Forge (originally forked on the contrib theme, Sky)
+core_version_requirement: ^9 || ^10
+type: theme
+base theme: classy
+dependencies:
+  - classy:classy
+project: cforge
+package: Hamlets
+regions:
+  main_menu: Top main menu
+  top: Above the main content
+  sidebar_first: Left sidebar
+  sidebar_second: Right sidebar
+  content: Content
+  footer: Footer
+
+libraries:
+  - sky_seldulac/global-styling
+
+config:
+  - sky_seldulac.settings

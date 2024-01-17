@@ -1,0 +1,15 @@
+langcode: en
+status: true
+id: sky_seldulac_pagetitle
+theme: sky_seldulac
+region: top
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: ''
+  provider: core
+  label_display: '0'
+visibility: {}
+

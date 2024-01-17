@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a smallad.
+ * Available variables:
+ * depending on what's visible on admin/structure/smallads/manage/TYPE/display
+ * - body: Node body or teaser depending on $teaser flag.
+ * - owner: the compact view of the owner user
+ * - image:
+ * - changed: Formatted changed date (use $changed to reformat with format_date()).
+ * - categories: the themed list of taxonomy term links output from theme_links().
+ * - external_link: a link to further information on another site
+ * - comments
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - offer|want| or other smallad type
+ *   - smallad--view-mode-[view_mode]:
+ * Other variables:
+ * - type: machine name of bundle e.g. offer, want
+ * - transact_credit added by cforge_smallad_view_alter()
+ * - transact_bill added by cforge_smallad_view_alter()
+ * @todo find out why everything inside <article> (or div, put not p) is ignored firefox
+#}
+<!--smallad.html.twig-->
+<article{{ attributes }}>
+  {{ image }}
+  {{ body }}
+  {{ links }}
+  {{ external_link }}
+  {{ categories }}
+  <br style="clear:both" />
+  {{ contact }}
+  {{ free }}
+  {{ money }}
+  {{ service }}
+  <br style="clear:both" />
+  {{ details }}
+  <hr style="clear:both"/>
+  {{ comments }}
+</article>
+<!--/smallad.html.twig-->

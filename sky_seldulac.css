@@ -1,0 +1,1137 @@
+div, span, applet, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+html{
+  font-size: 100%;
+}
+body {
+  font-family: 'Lucida Grande', "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+  color: #555;
+  background: #314C74 url('images/bg-body.png') repeat-x left top;
+  overflow-x: auto;
+  line-height: 1.6em;
+  text-align: left;
+  font-size: 14px;
+}
+
+/*---------cr
+ * LAYOUT
+ *--------
+ */
+#wrapper{
+  height: auto !important;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #fff;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+
+footer#page-footer {
+  clear: both;
+  height: auto;
+  text-align: center;
+  padding: 3em 0 1em;
+}
+
+div#credit{
+  text-align: center;
+  color:#ccc;
+}
+div#credit a{
+  text-align: center;
+  color:#fff;
+}
+
+/* Rounded corners in footer todo */
+.bottom {
+  height: 16px;
+  clear: both;
+}
+/* ---------
+ * Header
+ * --------- */
+div#wrapper>header {
+  height: 7em; /* this works with the logo height excluding padding*/
+}
+div#wrapper>header h1{
+  display: inline-block;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  clear:none;
+  max-width: 70%;
+}
+
+div#wrapper>header #logo {
+  display: inline-block;
+  float: left;
+  max-width: 40%; /*this didn't work well when the title and slogan were hidden'*/
+}
+div#wrapper>header .name-slogan{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #48f;
+}
+
+main {
+  float: left;
+  width: 60%;
+}
+
+/* ---------
+ * Sidebar
+ * --------- */
+aside {
+  overflow: hidden;
+  background-color: #fff;
+  width: 20%;
+  float: left;
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+
+aside div h2 {
+  text-align: left;
+  font-size: 1.2em;
+  background-color: rgb(0, 113, 188);
+  color: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+aside .block{
+  margin-bottom: 2em;
+  padding:10px;
+}
+
+aside ul li a.is-active {
+  background: #fff url('images/bg-shade-dark.png') repeat-x bottom left;
+  color: #fff;
+}
+aside div.block ul{
+  margin-left: 7px;
+  list-style-position: outside;
+}
+
+aside#sidebar-right>div>div{
+  margin-right: 0.5em;
+}
+aside#sidebar-right div.region>div,
+aside#sidebar-left div.region>div,
+aside#sidebar-right div.region>nav,
+aside#sidebar-left div.region>nav {
+  background-image: url('images/blockbg.jpg');
+  background-size: 100% 100%;
+}
+
+.button, .image-button {
+  /*margin: 0 !important;*/
+}
+#edit-neighbourhood {
+  height: 2em;
+}
+
+div#views-exposed-form-members-member-page {
+    clear:none;
+}
+/* NOT #edit-submit--2 */
+#edit-submit-members,
+#edit-submit-offers-wants-lists {
+  float:left;
+}
+#edit-type--wrapper{
+  width: 100%;
+}
+#edit-type-offer, #edit-type-want {
+  margin-left: 1em;
+}
+legend {
+  /* width: 40% !important; */
+  /*float: left; do not change*/
+}
+
+form#search-block-form .form-actions {
+  display:inline;
+}
+form#search-block-form input.button {
+  background: url('images/searchbut.gif') no-repeat;
+  width: 47px;
+  height: 18px;
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1660px), screen and (min-device-width: 1001px) and (max-device-width: 1660px) {
+  /* the next two entries change header and subtitle size */
+  div#wrapper>header>h1 {
+    /* overflow: hidden; do not use*/
+    font-size: 40px !important;
+    margin-top: 0.4em;
+  }
+  div#wrapper>header .slogan {
+    /* font-size: 14px !important; much too small */
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px), screen and (min-device-width: 601px) and (max-device-width: 1000px) {
+  aside {
+    width: 100%;
+  }
+  aside#sidebar-left div.region .block {
+    width: 50%;
+    float:left;
+  }
+
+  /* hide these blocks to unclutter the screen */
+  aside#sidebar-left div.region #block-views-block-sky-seldulac-comment-recent,
+  aside#sidebar-left div.region #block-sky-seldulac-masquerade {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  /* the next two entries change header and subtitle size */
+  div#wrapper>header>h1 {
+    overflow: hidden;
+    font-size: 28px !important;
+  }
+  div#wrapper>header .slogan {
+    font-size: 20px !important;
+  }
+
+  nav#nav-main ul li {
+    font-size: 1em;
+  }
+  .priority-low {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 600px), screen and (min-device-width: 1px) and (max-device-width: 600px) {
+  aside {
+    width: 100%;
+  }
+  aside#sidebar-left {
+    float: unset;
+  }
+  aside#sidebar-left div.region div.block{
+    width: 100%;
+  }
+  /* hide these blocks to unclutter the screen */
+  aside #block-views-block-sky-seldulac-comment-recent,
+  aside #block-sky-seldulac-views-block-events-block-1,
+  aside #block-sky-seldulac-masquerade,
+  aside #block-sky-seldulac-aggregatorfeed2 {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  /* the next two entries change header and subtitle size */
+  div#wrapper>header>h1 {
+    overflow: hidden;
+    font-size: 24px !important;
+    float: left;
+  }
+  div#wrapper>header .slogan {
+    font-size: 16px !important;
+    float: left;
+    padding-left: 0 !important;
+  }
+  /* this entry changes header logo size */
+  div#wrapper>header #logo {
+    max-width: 40%;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  .priority-medium, .priority-low {
+    display: none;
+  }
+
+}
+
+
+/*
+Reorder the sidebar blocks:
+http://dev.communityforge.net/admin/structure/block
+Recent comments
+Upcoming events
+Offer categories
+Masquerade
+Place a listing
+*/
+
+aside ul,
+aside div.block,
+aside div.view-content div{
+  margin-left: 0;
+}
+
+aside div#menu-account ul li,
+aside div#menu-tools ul li,/* menu block doesn't give us much in the way of classes */
+aside div.views-row {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: thin solid #ddd;
+  display: block;
+}
+
+aside ul li:last-child a,
+aside div.view-content div:last-child {
+  border-bottom: 0;
+}
+
+aside ul li li a {
+  text-indent: 18px;
+}
+
+aside ul ul {
+  background: none;
+  padding-top: 0;
+}
+
+aside ul {
+  margin: 0 0 0 7px;
+}
+
+aside .item-list ul li {
+  list-style-type: disc;
+  margin: 0;
+}
+
+aside .content, aside .content-menu {
+  padding: 10px;
+}
+
+/* Level 1 */
+aside ul li a{
+  text-indent: 5px !important;
+}
+/* Level 2 */
+aside ul li ul {
+  padding-left:10px;
+}
+aside ul li ul li{
+  border-bottom:none;
+}
+aside ul li ul li a{
+  line-height: 2em;
+}
+
+
+aside ul li li:last-child a {
+  border-color: #ddd;
+}
+
+aside .item-list ul li {
+  color: #888;
+}
+
+/* Hover/Active */
+aside ul li.expanded a:hover,
+aside ul li.collapsed a:hover,
+aside ul li.leaf a:hover,
+aside ul a:hover,
+aside ul a.is-active {
+  color: #fff!important;
+  border-color: #ddd;
+  background: #fff url('images/bg-shade-medium.png') repeat-x bottom left !important;
+}
+
+aside ul li li:last-child a {
+  border-color: #ddd;
+}
+
+/* -----------
+ * Navigation
+ * -----------
+ */
+nav#nav-main {
+  clear: both;
+  padding-bottom: 17px;
+  border-bottom: none;
+  background-image: url('images/primary-links.jpg');
+  background-size: 100% 100%;
+}
+
+nav#nav-main ul {
+  line-height: 3em;
+  display:table;
+  margin:0pt auto;
+  top: 3px;
+  position: relative;
+}
+nav#nav-main ul li {
+  float: left;
+  line-height: 30px;
+  margin: 0 !important;
+  padding: 0;
+  list-style-image: none;
+  list-style-type: none;
+  border-left: 2px solid #ddd;
+  font-size: 1.25em;
+}
+nav#nav-main ul li:first-child {
+  border-left: none;
+}
+nav#nav-main ul li.leaf a:hover {
+  background: #B3B3B3 url('images/bg-shade-medium.png') repeat-x bottom left!important;
+}
+nav#nav-main ul li a,
+nav#nav-main ul li a:visited{
+  display: block;
+  margin: 0;
+  padding: 0 1.20em;
+  color:#0071bc;
+}
+nav#nav-main ul li a:hover,
+nav#nav-main ul li:hover a:hover{
+  border-color: #ddd;
+  background: #B3B3B3 url('images/bg-shade-medium.png') repeat-x bottom left;
+  color: #fff;
+}
+
+
+/* --------
+ * Headings
+ * --------
+ */
+
+/* linked heading color */
+h1 a, h2 a, h3 a, h4 a, h5 a, .node .title a {
+  color: #314C74;
+}
+h1, h2, h3, h4, h5, h6,
+div.view-id-user_directory div.view-header {
+  clear: both;
+  display: block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.4em;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  line-height: 1em;
+}
+h1.page-title {
+  margin: 0;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3, div.view-id-user_directory div.view-header {
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.4em;
+}
+h5 {
+  font-size: 1.2em;
+}
+
+th, thead th {
+  background: #fff url('images/bg-shade-light.png') repeat-x bottom left;
+  color: #777;
+}
+td.active, tr.even, tr.odd {
+  border-color: #fff;
+}
+
+
+/* ---------
+ * Forms
+ * ---------
+ */
+
+.form-radio, .form-checkbox, .form-file, .form-select, select, .form-text, input, .form-textarea, textarea {
+  color: #000;
+}
+
+.form-textarea  {
+  background: #fff url('images/bg-shade-white-lrg.png') repeat-x bottom left;
+  color: #000;
+}
+
+.form-item .description {
+  color: #888;
+  font-size: .95em;
+}
+
+.form-item .error, .marker, .new, .form-required {
+  border-color: #C00;
+}
+/* Form item wrappers */
+.form-checkboxes, .form-radios {
+  margin: 0;
+}
+
+.form-checkboxes .form-item, .form-radios .form-item {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+/* Radio/Checkbox Labels */
+.form-item label.option {
+  display: inline;
+  font-weight: normal;
+  text-transform: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-item .error {
+  border: 1px solid red;
+}
+.form-actions {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.form-submit {
+  /*float: right;*/
+  margin-top: 1em;
+}
+.form-text {
+  display: unset !important;
+}
+
+.form-file:focus, .form-text:focus, input:focus, .form-textarea:focus, textarea:focus  {
+  background: #e8e8e8;
+}
+
+fieldset, .form-text, .form-textarea  {
+  border-color: #ddd;
+}
+
+a, a:hover{
+  text-decoration:none;
+}
+#user-login-form label {
+  display:block;
+}
+form input.form-text {
+  width: 100%;
+  max-width:25em;
+}
+
+/* General Tags */
+p {
+  margin: 5px 0 15px;
+}
+ul {
+  list-style-position: inside;
+}
+
+/* ---------
+ * Links/General
+ * ---------
+ */
+a{
+  color: rgb(0, 113, 188);
+}
+
+a:hover, a:hover {
+  color: #000;
+}
+
+code, pre {
+  font-family: 'Monaco', 'Consolas', 'Deja Vu Sans Mono', 'Courier New', courier, monospace;
+  color: #888;
+}
+
+blockquote, cite {
+  background: url('images/bg-cite.png') no-repeat;
+  color: #888;
+  font-style: italic;
+  padding: 10px 0 0 45px;
+}
+
+
+/* ---------
+ * Message Box
+ * ---------
+ */
+
+/*div.messages--notice,*/
+div.messages--error,
+div.messages--warning,
+div.messages--status{
+  padding: 15px 60px 15px !important;
+  font-size: 15px;
+  border: 1px solid;
+  margin: 0 0 10px 0;
+}
+ div.messages--error {
+  background: #e8e8e8 url('images/dialog-error.png') no-repeat left top;
+}
+ div.messages--warning {
+  background: #e8e8e8 url('images/dialog-warning.png') no-repeat left top;
+}
+ /*div.messages--notice, */
+ div.messages--status {
+  background: #e8e8e8 url('images/dialog-status.png') no-repeat left top;
+}
+
+
+/* ---------
+ * Tables
+ * ---------
+ */
+table, th, thead th, td, td.menu-disabled, #blocks td.block {
+  border-color: #ddd;
+}
+th, thead th {
+  background: #fff url('images/bg-shade-light.png') repeat-x bottom left;
+  color: #777;
+  text-align: center;
+}
+td.menu-disabled, tr.even td {
+  background: #e8e8e8;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 10px 0;
+}
+
+table caption {
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
+
+th {
+  border: none;
+  padding: 4px 2px;
+  font-size:1.2em;
+}
+
+td {
+  padding: 2px;
+  vertical-align: middle;
+  border: thin solid #ddd;
+}
+
+.table-wrapper {
+  overflow: auto;
+}
+
+.node .table-wrapper,
+.view .table-wrapper {
+  overflow: visible;
+}
+
+.table-wrapper table {
+  margin: 10px .2%;
+  width: 99.5%;
+}
+
+table.package,
+#tracker table {
+  width: 99.5%;
+}
+
+tr.even,tr.odd {
+  border-bottom: none;
+  padding: 0;
+}
+
+/* height must match .push margin top vertical total   */
+#page-title {
+  display: block;
+  padding-right: 16px;
+  line-height: 2em;
+}
+
+div#main-inner,
+div.region-top {
+  padding: 10px 10px;
+}
+
+main .block .title {
+  font-size: 1.6em;
+}
+
+/*-----------
+ * NODES
+ *---------*/
+
+div.node__meta {
+  color: #999;
+}
+
+.node {
+  clear: both;
+  display: block;
+  margin: 0;
+  padding: 10px;
+}
+
+.node .content {
+  padding: 5px 0 15px;
+  clear: both;
+}
+
+.node .content ol {
+  list-style-type: decimal;
+  margin: 0 0 0 35px;
+}
+
+.node .content ul {
+  list-style-type: disc;
+  margin: 0 0 0 35px;
+}
+
+.node .content li {
+  padding: 2px 0;
+}
+
+.node .content dt  {
+  background: #fff url('images/bg-shade-light.png') repeat-x bottom left;
+  color: #777;
+  border-color: #ddd;
+}
+
+.node .content dl, .node .content dd {
+  border-color: #ddd;
+}
+
+.node dd:hover  {
+  background: #ddd;
+}
+.node .info p {
+  color: #888;
+}
+
+/* ---------
+ * Comments
+ * --------- */
+.comment  {
+  background: #fff url('images/bg-shade-white-lrg.png') repeat-x left bottom;
+  border-color: #ddd;
+  border: 1px solid;
+  clear: both;
+  display: block;
+  margin: 0 0 15px 0;
+}
+
+.comment .info {
+  color: #888;
+  clear: both;
+  display: block;
+  padding: 5px 10px;
+}
+
+#comments {
+  padding: 15px 10px;
+  padding:0!important;
+  clear:both;
+}
+
+#comments a.is-active {
+  font-weight:400;
+}
+
+#comments h3{display:inline;}
+#comments h3, #comments .content{clear:none;}
+#comments .links{clear:right;float:right;}
+#comments div.comment{padding:10px 10px 0 10px;}
+
+.comment .title {
+  display: block;
+  font-size: 1.5em;
+  line-height: 2em;
+  text-indent: 8px;
+}
+
+.comment .title .new {
+  padding-left: 4px;
+}
+
+.comment .info .picture {
+  display: inline;
+  margin: 0 10px;
+}
+
+section.comment-wrapper {
+  margin-top: 2em;
+}
+section.comment-wrapper h2 {
+  font-size: 1.5em;
+}
+
+div.community-tasks-completed{
+  float:right;
+  clear:right;
+}
+
+/* User Profile */
+article.profile div.field--name-notes{
+  float: left;
+  width: 100%;
+  clear: both;
+  margin: 5px 0px 10px 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+article div.field--name-user-picture img{
+  float: right;
+  max-width: 33%;
+  margin: 1em 0em 1em 1em;
+}
+
+section.field--type-comment div.clearfix.field--type-text-long:after {
+  clear:none;
+}
+
+div.leaflet-popup-content div.field--name-user-picture{
+  float: none;
+}
+
+div.offline-contact {
+  border: none;
+  box-shadow: 2px 2px 2px 1px rgb(136, 136, 136);
+  -moz-box-shadow:2px 2px 2px 1px rgb(136, 136, 136);
+  width:100%;
+}
+
+.profile h3{
+  clear:both;
+  border-bottom:none;
+}
+
+
+/* Feed Icon */
+a.feed-icon {
+  float: right;
+  margin: 1em 1em 0 0;
+}
+
+li a.is-active {
+  font-weight: 700;
+}
+
+/* Errors/Markers */
+div.warning, div.error {
+  border: 1px solid;
+  margin: 0 0 10px 0;
+  padding: 45px 10px 10px!important;
+}
+
+
+/* Inputs */
+.form-radio,
+.form-checkbox,
+.form-file,
+.form-select, select,
+.form-text, input,
+.form-textarea, textarea {
+  font-size: 1em;
+}
+
+.form-radio,
+.form-checkbox {
+  border: none;
+}
+
+.form-select option, select option {
+  padding: 1px;
+}
+
+.form-text,
+.form-textarea, .form-autocomplete  {
+  padding: 4px 2px;
+}
+
+
+/* Fieldsets */
+fieldset {
+  padding: 4px 10px;
+  margin: 10px 0;
+  border: 1px solid;
+  /*box-shadow: 10px 10px 5px #888888;*/
+}
+
+html.js fieldset.collapsible legend a {
+  padding: 0 0 0 24px;
+}
+
+
+html.js fieldset.collapsible .fieldset-wrapper {
+  overflow: auto!important;
+}
+
+
+
+
+
+/* ---------
+ * Tabs
+ * --------- */
+/* Primary */
+
+div.tabs-primary ul {
+  padding: 0;
+  height: 3.2em;
+  clear: both;
+}
+
+div.tabs-primary li a{
+  background: #fff url('images/bg-shade-light.png') repeat-x bottom left;
+  color: #777;
+}
+
+div.tabs-primary li a:hover,
+div.tabs-secondary li a:hover {
+  border-color: #B3B3B3;
+  background: #B3B3B3 url('images/bg-shade-medium.png') repeat-x bottom left;
+  color: #fff;
+}
+
+div.tabs-primary li.is-active a,
+div.tabs-secondary {
+  background: #858585 url('images/bg-shade-dark.png') repeat-x bottom left;
+  color: #fff;
+}
+
+div.tabs-primary li:first-child a.is-active,
+div.tabs-secondary li:first-child a.is-active {
+  border-color: #555;
+}
+
+div.tabs-primary li, div.tabs-secondary li{
+  float: left;
+  list-style: outside none none;
+}
+
+div.tabs-primary li{
+  font-weight: bold;
+}
+
+div.tabs-primary li a{
+  float: left;
+  display: block;
+  padding: 0 8px;
+  line-height: 3em;
+}
+
+div.tabs-secondary li {
+  font-size: 0.95em;
+}
+
+div.tabs-secondary {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin: -3px 0px 1em;
+}
+div.tabs-secondary ul {
+  padding: 0;
+  margin: 0;
+  clear: left;
+}
+div.tabs-secondary li a {
+  float: left;
+  display: block;
+  padding: 0px 8px;
+  line-height: 2em;
+  white-space: nowrap;
+  color: #e8e8e8;
+}
+
+div.tabs-secondary li a.is-active {
+  color: #fff;
+}
+.tabs a.is-active{
+  background-color: inherit;
+}
+
+div.contact-summary {
+  border: medium solid gray;
+  margin:1em 0em;
+  padding:0.5em;
+  clear:both;
+  float:left;
+  width:100%;
+}
+
+table.profile-balances{
+  width:inherit;
+}
+
+div#branding {
+ float: left;
+ margin-bottom: 10px;
+}
+
+header ul.menu {
+  float:right;
+  text-align:right;
+}
+
+span.views-field-title,
+div.views-field-value,
+div.views-field-name,
+header ul.menu li {
+  display:inline;
+  padding: 0.2em 0pt 0pt 6pt;
+}
+
+.action-links li, li.action-links {
+  display:inline;
+  border: medium solid rgb(0, 113, 188);;
+  -webkit-border-radius: 18px;
+  border-radius: 18px;
+  padding: 0.3em;
+  background-color: #e8e8e8;
+}
+
+a.advanced-help-link{margin-right:3px;}
+
+/* give a background color and spacing to break up the comment stream */
+article.smallad section article{
+  background-color: #e8e8e8;
+}
+
+div.news div.field--name-image {
+  float:right;
+  margin: 0 0 1em 1em;
+}
+
+section.comment-wrapper article.profile {
+  float:left;
+  margin: 0 1em 1em 0;
+}
+section.comment-wrapper h4 {
+  clear:none;
+}
+
+/**
+ * Pager
+ * Borrowed from Bartik
+ */
+
+/* Using .pager selector on the first one to override .region-content ul. */
+.pager .pager__items {
+  padding: 0;
+  clear: both;
+  text-align: center;
+}
+.pager__item {
+  font-size: 0.95em;
+  padding: 10px 15px;
+  display: inline;
+}
+.pager__item a {
+  display: inline-block;
+}
+.pager__item.is-active a {
+  color: #3b3b3b;
+  border-bottom: 0;
+}
+.pager__item--first,
+.pager__item--previous {
+  padding: 10px 10px 10px 0; /* LTR */
+}
+.pager__item--ellipsis {
+  padding: 10px 0;
+}
+.pager__item--last,
+.pager__item--next {
+  padding: 10px 0 10px 10px; /* LTR */
+}
+
+details {
+  display:block;
+  border: 1px solid #ccc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+details > .details-wrapper {
+  padding: 0.5em 1.5em;
+}
+
+.js td .dropbutton-multiple {
+  padding-right: 6em;
+  margin-right: 0;
+}
+
+.js .dropbutton-multiple .dropbutton-widget {
+  border: thin solid #ccc;
+  background-color: white;
+}
+
+#views-exposed-form-mcapi-exchange-transactions-admin input,
+#views-exposed-form-mcapi-transactions-admin input{
+  width: 20em;
+}
+
+div.field.field--name-coordinates{
+  width: 33%;
+  float:right;
+}
+div.carousel-item img {
+  height:350px;
+}
+
+
+article.js-comment{
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  padding: 0.5em;
+  margin: 0.5em 0 0.5em 0;
+}
+
+div.views-element-container article{
+  border-bottom: thin solid #888;
+}
+article {
+  padding:0.5em;
+}
+article footer {
+  color: #999;
+}
+
+.views-field .button {
+  margin-top: inherit;
+}
+table.views-table td.is-active {
+  background-color: inherit;
+}
+
+/* Special formatting for forum tables */
+@media screen and (min-width: 1px) and (max-width: 800px), screen and (min-device-width: 1px) and (max-device-width: 800px) {
+  div#forum-0 thead {display:none;}
+  div#forum-0 table tr td {display: block;}
+  div#forum-0 td {position: relative; padding-left: 7em;}
+  div#forum-0 td:before {position: absolute; top: 6px; left: 6px; width: 30%; padding-right: 10px; white-space: nowrap;}
+  div#forum-0 td:nth-child(1):before { content: "Forum: "; white-space: pre-wrap;}
+  div#forum-0 td:nth-child(2):before { content: "Sujets: "; white-space: pre-wrap;}
+  div#forum-0 td:nth-child(3):before { content: "Contributions: "; white-space: pre-wrap;}
+  div#forum-0 td:nth-child(4):before { content: "Dernière: "; white-space: pre-wrap;}
+}
+
+@media screen and (min-width: 1px) and (max-width: 400px), screen and (min-device-width: 1px) and (max-device-width: 400px) {
+  table{
+    font-size: 75%;
+  }
+}
+
+article.profile div.wallet.summary {
+  float: left;
+  margin: 1em 1em 1em 0;
+}
+div.field--name-notes-admin {
+  clear: left;
+  background-color: #eee;
+}

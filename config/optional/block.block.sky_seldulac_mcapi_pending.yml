@@ -1,0 +1,30 @@
+uuid: fa54e762-cdef-4775-8d50-458d30dcc4bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sky_seldulac
+id: sky_seldulac_mcapi_pending
+theme: sky_seldulac
+region: sidebar_first
+weight: -11
+provider: null
+plugin: mcapi_pending
+settings:
+  id: mcapi_pending
+  label: 'Pending transactions'
+  provider: mcapi
+  label_display: visible
+  curr_ids: {  }
+  user_source: '0'
+  views_label: ''
+  items_per_page: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }
+

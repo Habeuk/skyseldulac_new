@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.members
+  module:
+    - views
+id: views_block__members_block_newest
+theme: sky_seldulac
+region: sidebar_second
+weight: 0
+provider: cforge
+plugin: 'views_block:members-block_newest'
+settings:
+  id: 'views_block:members-block_newest'
+  label: 'Welcome new members'
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: '5'
+visibility:
+  request_path:
+    id: request_path
+    pages: "news\r\nmembers\r\nnode/*"
+    negate: false
+    context_mapping: {  }
+

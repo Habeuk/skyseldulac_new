@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - mcapi_limits
+id: sky_seldulac_heldwallets
+theme: sky_seldulac
+region: sidebar_second
+weight: null
+provider: mcapi
+plugin: held_wallets
+settings:
+  id: held_wallets
+  label: 'Balance Limits'
+  label_display: visible
+  provider: mcapi
+  owner_source: 1
+  curr_ids: {  }
+  item: 'extrafield:balance_limits'
+  first_only: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "transact/*\r\noffers*\r\nwants*"
+    negate: false
+    context_mapping: {  }
+

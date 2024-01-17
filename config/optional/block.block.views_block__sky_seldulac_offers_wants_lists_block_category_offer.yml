@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.offers_wants_lists
+  module:
+    - smallads
+    - system
+    - views
+  theme:
+    - sky_seldulac
+id: views_block__sky_seldulac_offers_wants_lists_block_category_offer
+theme: sky_seldulac
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'views_block:offers_wants_lists-block_category_offer'
+settings:
+  id: 'views_block:offers_wants_lists-block_category_offer'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/offer*'
+    negate: false
+    context_mapping: {  }
+

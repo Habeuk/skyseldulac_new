@@ -1,0 +1,114 @@
+# $Id$
+#
+# French translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  node-exchange.tpl.php,v 1.1.2.3 2010/12/06 13:19:46 hutch
+#  page.tpl.php: n/a
+#  template.php: n/a
+#  user-profile.tpl.php,v 1.2.2.1 2008/10/15 13:52:04 dries
+#  sky_seldulac.info: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-07-06 07:36+0200\n"
+"PO-Revision-Date: 2013-07-06 07:36+0200\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: French <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+
+#: certificate.tpl.php:35
+msgid "On @recorded<br />!payer <strong>paid</strong> !payee</br />the sum of !worth"
+msgstr ""
+"Le @recorded !payer <strong>a donné à</strong> !payee la somme de "
+"!worth"
+
+#: certificate.tpl.php:48
+msgid "For:"
+msgstr "Pour:"
+
+#: certificate.tpl.php:59
+msgid "Dependent transactions"
+msgstr "Echanges subordonnés"
+
+#: page.tpl.php:75
+msgid "Site designed and hosted for free by !cforge, a non-profit association registered in Geneva, Switzerland."
+msgstr ""
+"Site conçu et hébergé gratuitement par !cforge, une association à "
+"but non-lucratif à Genève, Suisse."
+
+#: template.php:64
+msgid "Get !feed-title delivered as it happens!"
+msgstr ""
+
+#: user-profile.tpl.php:20
+msgid "My profile"
+msgstr "Mon profil"
+
+#: user-profile.tpl.php:49
+msgid "Balance history"
+msgstr "Historique du solde"
+
+#: user-profile.tpl.php:54
+msgid "Stats"
+msgstr "Statistiques"
+
+#: user-profile.tpl.php:64
+msgid "Pending transactions"
+msgstr "Échanges en attente de confirmation"
+
+#: user-profile.tpl.php:69
+msgid "Other details"
+msgstr "Autre"
+
+#: sky_seldulac.info:0
+msgid "Hamlets (Cforge default)"
+msgstr ""
+
+#: sky_seldulac.info:0
+msgid "The default theme for Community Forge, based on contrib theme, Sky"
+msgstr ""
+"Thème par défaut de Community Forge, basé sur le thème de "
+"contribution 'Sky'"
+
+#: sky_seldulac.info:0
+msgid "Help"
+msgstr "Aide"
+
+#: sky_seldulac.info:0
+msgid "Left sidebar"
+msgstr "Barre latérale gauche"
+
+#: sky_seldulac.info:0
+msgid "Right sidebar"
+msgstr "Barre latérale droite"
+
+#: sky_seldulac.info:0
+msgid "Header right"
+msgstr "En-tête droite"
+
+#: sky_seldulac.info:0
+msgid "Menus"
+msgstr "Menus"
+
+#: sky_seldulac.info:0
+msgid "Content"
+msgstr "Contenu"
+
+#: sky_seldulac.info:0
+msgid "Content bottom"
+msgstr "Contenu en bas"
+
+#: sky_seldulac.info:0
+msgid "Content footer"
+msgstr "Contenu pied de page"
+
+#: sky_seldulac.info:0
+msgid "Footer"
+msgstr "Pied de page"
+

@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - views
+id: views_block__sky_seldulac_news_block
+theme: sky_seldulac
+region: sidebar_first
+weight: null
+provider: cforge
+plugin: 'views_block:news-block'
+settings:
+  id: 'views_block:news-block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: 
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/node"
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      document: document
+      event: event
+      image: image
+
+

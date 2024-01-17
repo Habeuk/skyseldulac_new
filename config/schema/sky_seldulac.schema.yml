@@ -1,0 +1,7 @@
+sky_seldulac.settings:
+  type: theme_settings
+  label: 'Sky Seldulac settings'
+  mapping:
+    title_hide:
+      type: boolean
+      label: The logo image includes the site's name
