@@ -3,8 +3,8 @@ status: true
 dependencies:
   config:
     - system.menu.tools
-id: sky_seldulac_tools
-theme: sky_seldulac
+id: skyseldulac_new_tools
+theme: skyseldulac_new
 region: sidebar_second
 weight: -9
 provider: null

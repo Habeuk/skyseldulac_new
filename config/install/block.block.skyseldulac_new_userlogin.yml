@@ -1,7 +1,7 @@
 langcode: en
 status: true
-id: sky_seldulac_userlogin
-theme: sky_seldulac
+id: skyseldulac_new_userlogin
+theme: skyseldulac_new
 region: sidebar_first
 weight: -10
 provider: cforge

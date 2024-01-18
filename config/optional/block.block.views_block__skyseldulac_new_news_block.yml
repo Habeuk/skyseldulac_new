@@ -5,8 +5,8 @@ dependencies:
     - views.view.news
   module:
     - views
-id: views_block__sky_seldulac_news_block
-theme: sky_seldulac
+id: views_block__skyseldulac_new_news_block
+theme: skyseldulac_new
 region: sidebar_first
 weight: null
 provider: cforge

@@ -6,9 +6,9 @@ dependencies:
     - mcapi_forms
     - system
   theme:
-    - sky_seldulac
-id: sky_seldulac_transactionform
-theme: sky_seldulac
+    - skyseldulac_new
+id: skyseldulac_new_transactionform
+theme: skyseldulac_new
 region: sidebar_first
 weight: 4
 provider: cforge

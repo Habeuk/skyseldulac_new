@@ -7,7 +7,7 @@
 #  page.tpl.php: n/a
 #  template.php: n/a
 #  user-profile.tpl.php,v 1.2.2.1 2008/10/15 13:52:04 dries
-#  sky_seldulac.info: n/a
+#  skyseldulac_new.info: n/a
 #
 #, fuzzy
 msgid ""
@@ -62,47 +62,47 @@ msgstr ""
 msgid "Other details"
 msgstr ""
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Hamlets (Cforge default)"
 msgstr ""
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "The default theme for Community Forge, based on contrib theme, Sky"
 msgstr ""
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Help"
 msgstr ""
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Left sidebar"
 msgstr ""
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Right sidebar"
 msgstr ""
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Header right"
 msgstr ""
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Menus"
 msgstr ""
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Content"
 msgstr ""
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Content bottom"
 msgstr ""
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Content footer"
 msgstr ""
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Footer"
 msgstr ""
 

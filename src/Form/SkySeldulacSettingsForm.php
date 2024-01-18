@@ -1,6 +1,6 @@
 <?
 
-namespace Drupal\sky_seldulac\Form;
+namespace Drupal\skyseldulac_new\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;

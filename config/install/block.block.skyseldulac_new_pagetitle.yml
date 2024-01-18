@@ -1,7 +1,7 @@
 langcode: en
 status: true
-id: sky_seldulac_pagetitle
-theme: sky_seldulac
+id: skyseldulac_new_pagetitle
+theme: skyseldulac_new
 region: top
 weight: -5
 provider: null

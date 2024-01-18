@@ -5,8 +5,8 @@ dependencies:
     - views.view.comments_recent
   module:
     - views
-id: views_block__sky_seldulac_comment_recent
-theme: sky_seldulac
+id: views_block__skyseldulac_new_comment_recent
+theme: skyseldulac_new
 region: sidebar_first
 weight: -13
 provider: cforge

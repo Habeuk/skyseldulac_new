@@ -4,11 +4,11 @@ dependencies:
   module:
     - aggregator
   theme:
-    - sky_seldulac
-id: sky_seldulac_aggregatorfeed1
-theme: sky_seldulac
+    - skyseldulac_new
+id: skyseldulac_new_aggregatorfeed2
+theme: skyseldulac_new
 region: sidebar_first
-weight: -50
+weight: 50
 provider: cforge
 plugin: aggregator_feed_block
 settings:
@@ -16,8 +16,8 @@ settings:
   label: ''
   provider: aggregator
   label_display: '1'
-  block_count: 1
-  feed: '1'
+  block_count: 3
+  feed: '2'
 visibility:
   request_path:
     id: request_path

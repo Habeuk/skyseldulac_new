@@ -4,9 +4,9 @@ dependencies:
   module:
     - help
   theme:
-    - sky_seldulac
-id: sky_seldulac_help
-theme: sky_seldulac
+    - skyseldulac_new
+id: skyseldulac_new_help
+theme: skyseldulac_new
 region: top
 weight: -12
 provider: cforge

@@ -5,9 +5,9 @@ dependencies:
   module:
     - system
   theme:
-    - sky_seldulac
-id: sky_seldulac_mcapi_pending
-theme: sky_seldulac
+    - skyseldulac_new
+id: skyseldulac_new_mcapi_pending
+theme: skyseldulac_new
 region: sidebar_first
 weight: -11
 provider: null

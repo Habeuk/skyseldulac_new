@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Theme overrides for sky_seldulac.
+ * Theme overrides for skyseldulac_new.
  */
 
 use Drupal\block\Entity\Block;
@@ -12,19 +12,19 @@ use Drupal\views\ViewExecutable;
 /**
  * Implements hook_preprocess_HOOK() for node.html.twig.
  */
-function sky_seldulac_preprocess_node(&$variables) {
+function skyseldulac_new_preprocess_node(&$variables) {
   // dump($variables);
 }
 
 /**
  * Implements hook_form_theme_settings_alter().
  */
-function sky_seldulac_form_system_theme_settings_alter(&$form, $form_state) {
+function skyseldulac_new_form_system_theme_settings_alter(&$form, $form_state) {
 
   $form['logo']['title_hide'] = [
     '#title' => t('Logo incorporates title and slogan'),
     '#type' => 'checkbox',
-    '#default_value' => \Drupal::Config('sky_seldulac.settings')->get('title_hide'),
+    '#default_value' => \Drupal::Config('skyseldulac_new.settings')->get('title_hide'),
   ];
   $form['details'] = [
     '#type' => 'details',
@@ -33,7 +33,7 @@ function sky_seldulac_form_system_theme_settings_alter(&$form, $form_state) {
   ];
   $menus_list = \Drupal::entityTypeManager()->getStorage("menu")->loadMultiple();
   // dump($menus_list);
-  $configs = \Drupal::Config('sky_seldulac.settings')->get();
+  $configs = \Drupal::Config('skyseldulac_new.settings')->get();
   dump($configs);
   foreach ($menus_list as $key => $menu) {
     $menuId = $menu->get("id");
@@ -52,7 +52,7 @@ function sky_seldulac_form_system_theme_settings_alter(&$form, $form_state) {
  *
  * @note Building stuff below the block level means that there's no caching
  */
-function sky_seldulac_preprocess_page(&$vars) {
+function skyseldulac_new_preprocess_page(&$vars) {
   $menu_tree_service = \Drupal::service('menu.link_tree');
   foreach (['topright', 'main'] as $menu_name) {
     $parameters = $menu_tree_service
@@ -90,7 +90,7 @@ function sky_seldulac_preprocess_page(&$vars) {
   ];
 
   // Allows hiding the site name & slogan if the logo contains them.
-  if (!\Drupal::Config('sky_seldulac.settings')->get('title_hide')) {
+  if (!\Drupal::Config('skyseldulac_new.settings')->get('title_hide')) {
     $site_config = \Drupal::config('system.site');
     $branding['site_name']['#markup'] =
       "<div id=\"name-slogan\">
@@ -104,10 +104,10 @@ function sky_seldulac_preprocess_page(&$vars) {
 /**
  * Implements hook_theme_suggestions_menu_alter().
  */
-function sky_seldulac_theme_suggestions_menu_alter(array &$suggestions, array $variables) {
+function skyseldulac_new_theme_suggestions_menu_alter(array &$suggestions, array $variables) {
   // Récupérer les informations de suggestion de menu existantes
   // Ajouter une suggestion de menu personnalis￩e avec les informations re￧ues
-  $configs =  \Drupal::Config('sky_seldulac.settings')->get();
+  $configs =  \Drupal::Config('skyseldulac_new.settings')->get();
   if (isset($configs[$variables["menu_name"]]) && $configs[$variables["menu_name"]]) {
     $CustomSuggestions = 'menu__hbk_menu';
     $suggestions[] = $CustomSuggestions;

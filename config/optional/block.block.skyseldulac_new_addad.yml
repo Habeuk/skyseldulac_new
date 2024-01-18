@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - sky_seldulac
+    - skyseldulac_new
   module:
     - smallads
-id: sky_seldulac_addad
-theme: sky_seldulac
+id: skyseldulac_new_addad
+theme: skyseldulac_new
 region: sidebar_first
 weight: 10
 provider: smallads

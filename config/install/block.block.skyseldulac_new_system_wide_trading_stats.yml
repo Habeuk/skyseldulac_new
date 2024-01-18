@@ -5,9 +5,9 @@ dependencies:
   module:
     - mcapi
   theme:
-    - sky_seldulac
-id: sky_seldulac_system_wide_trading_stats
-theme: sky_seldulac
+    - skyseldulac_new
+id: skyseldulac_new_system_wide_trading_stats
+theme: skyseldulac_new
 region: footer
 weight: 0
 provider: null

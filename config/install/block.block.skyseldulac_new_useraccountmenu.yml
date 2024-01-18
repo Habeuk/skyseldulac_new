@@ -5,11 +5,11 @@ dependencies:
     - system.menu.account
   module:
     - system
-id: sky_seldulac_useraccountmenu
-theme: sky_seldulac
+id: skyseldulac_new_useraccountmenu
+theme: skyseldulac_new
 region: sidebar_second
 weight: -10
-provider: sky_seldulac
+provider: skyseldulac_new
 plugin: 'system_menu_block:account'
 settings:
   id: 'system_menu_block:account'

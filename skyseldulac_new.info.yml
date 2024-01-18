@@ -16,7 +16,7 @@ regions:
   footer: Footer
 
 libraries:
-  - sky_seldulac/global-styling
+  - skyseldulac_new/global-styling
 
 config:
-  - sky_seldulac.settings
+  - skyseldulac_new.settings

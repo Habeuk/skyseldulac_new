@@ -6,7 +6,7 @@ dependencies:
   module:
     - views
 id: views_block__members_block_newest
-theme: sky_seldulac
+theme: skyseldulac_new
 region: sidebar_second
 weight: 0
 provider: cforge

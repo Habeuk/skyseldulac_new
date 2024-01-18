@@ -2,7 +2,7 @@ global-styling:
   version: VERSION
   css:
     theme:
-      sky_seldulac.css: {}
+      skyseldulac_new.css: {}
 
 menu-styling:
   version: VERSION

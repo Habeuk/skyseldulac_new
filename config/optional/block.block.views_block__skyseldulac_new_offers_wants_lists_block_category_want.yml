@@ -8,9 +8,9 @@ dependencies:
     - system
     - views
   theme:
-    - sky_seldulac
-id: views_block__sky_seldulac_offers_wants_lists_block_category_want
-theme: sky_seldulac
+    - skyseldulac_new
+id: views_block__skyseldulac_new_offers_wants_lists_block_category_want
+theme: skyseldulac_new
 region: sidebar_first
 weight: -6
 provider: null

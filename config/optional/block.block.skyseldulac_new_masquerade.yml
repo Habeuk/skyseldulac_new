@@ -4,9 +4,9 @@ dependencies:
   module:
     - masquerade
   theme:
-    - sky_seldulac
-id: sky_seldulac_masquerade
-theme: sky_seldulac
+    - skyseldulac_new
+id: skyseldulac_new_masquerade
+theme: skyseldulac_new
 region: sidebar_first
 weight: -10
 provider: cforge

@@ -7,7 +7,7 @@
 #  page.tpl.php: n/a
 #  template.php: n/a
 #  user-profile.tpl.php,v 1.2.2.1 2008/10/15 13:52:04 dries
-#  sky_seldulac.info: n/a
+#  skyseldulac_new.info: n/a
 #
 #, fuzzy
 msgid ""
@@ -66,49 +66,49 @@ msgstr "Échanges en attente de confirmation"
 msgid "Other details"
 msgstr "Autre"
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Hamlets (Cforge default)"
 msgstr ""
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "The default theme for Community Forge, based on contrib theme, Sky"
 msgstr ""
 "Thème par défaut de Community Forge, basé sur le thème de "
 "contribution 'Sky'"
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Help"
 msgstr "Aide"
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Left sidebar"
 msgstr "Barre latérale gauche"
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Right sidebar"
 msgstr "Barre latérale droite"
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Header right"
 msgstr "En-tête droite"
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Menus"
 msgstr "Menus"
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Content"
 msgstr "Contenu"
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Content bottom"
 msgstr "Contenu en bas"
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Content footer"
 msgstr "Contenu pied de page"
 
-#: sky_seldulac.info:0
+#: skyseldulac_new.info:0
 msgid "Footer"
 msgstr "Pied de page"
 
