@@ -9,3 +9,5 @@ menu-styling:
   css:
     theme:
       css/themes/hbk-menu.css: {}
+  js:
+    js/hbk-menu.js: {}

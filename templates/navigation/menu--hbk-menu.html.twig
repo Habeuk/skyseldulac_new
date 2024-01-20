@@ -1,10 +1,9 @@
 {# Vérifier si le menu a des éléments #}
-
 {{attach_library("skyseldulac_new/menu-styling")}}
 {% if items %}
-	<input id="main-menu-hamburger" name="hamburger-box" type="checkbox">
-	<label for="main-menu-hamburger" class="main-menu-hamburger">
-
+<div class="container-menus">
+	<input name="hamburger-box" type="checkbox" class="input-hamburger" id="menu-hamburger-{{ menu_name }}" >
+	<label for="menu-hamburger-{{ menu_name }}" class="main-menu-hamburger">
 		<span class="hamburger-row"></span>
 	</label>
 	<div class="main-menu">
@@ -35,4 +34,5 @@
 			{% endfor %}
 		</ul>
 	</div>
+</div>
 {% endif %}

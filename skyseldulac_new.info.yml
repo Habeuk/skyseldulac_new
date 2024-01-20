@@ -1,5 +1,5 @@
-name: Hamlets
-description: The default theme for Community Forge (originally forked on the contrib theme, Sky)
+name: Hamlets ( update by HABEUK)
+description: The default theme for Community Forge (originally forked on the contrib theme, Sky) update by HABEUK.
 core_version_requirement: ^9 || ^10
 type: theme
 base theme: classy
@@ -10,6 +10,7 @@ package: Hamlets
 regions:
   main_menu: Top main menu
   top: Above the main content
+  slider: "Slider"
   sidebar_first: Left sidebar
   sidebar_second: Right sidebar
   content: Content

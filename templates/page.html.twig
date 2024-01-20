@@ -71,7 +71,11 @@
 			{{ menu_main }}
 		{% endif %}
 	</nav>
-
+	{% if page.slider %}
+		<div>
+			{{ page.slider }}
+		</div>		
+	{% endif %}
 	{% if page.sidebar_first %}
 		<aside id="sidebar-left" role="complementary">
 			{{ page.sidebar_first }}

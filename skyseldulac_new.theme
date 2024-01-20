@@ -1,48 +1,18 @@
 <?php
 
 /**
+ *
  * @file
  * Theme overrides for skyseldulac_new.
  */
-
 use Drupal\block\Entity\Block;
 use Drupal\views\ViewExecutable;
-
 
 /**
  * Implements hook_preprocess_HOOK() for node.html.twig.
  */
 function skyseldulac_new_preprocess_node(&$variables) {
   // dump($variables);
-}
-
-/**
- * Implements hook_form_theme_settings_alter().
- */
-function skyseldulac_new_form_system_theme_settings_alter(&$form, $form_state) {
-
-  $form['logo']['title_hide'] = [
-    '#title' => t('Logo incorporates title and slogan'),
-    '#type' => 'checkbox',
-    '#default_value' => \Drupal::Config('skyseldulac_new.settings')->get('title_hide'),
-  ];
-  $form['details'] = [
-    '#type' => 'details',
-    '#title' => 'Menu',
-    '#open' => TRUE,
-  ];
-  $menus_list = \Drupal::entityTypeManager()->getStorage("menu")->loadMultiple();
-  // dump($menus_list);
-  $configs = \Drupal::Config('skyseldulac_new.settings')->get();
-  dump($configs);
-  foreach ($menus_list as $key => $menu) {
-    $menuId = $menu->get("id");
-    $form['details'][$menuId] = [
-      '#type' => 'checkbox',
-      '#title' => $menu->get("label"),
-      '#default_value' => array_key_exists($menuId, $configs) ? $configs[$menuId] : false,
-    ];
-  }
 }
 
 /**
@@ -54,25 +24,24 @@ function skyseldulac_new_form_system_theme_settings_alter(&$form, $form_state) {
  */
 function skyseldulac_new_preprocess_page(&$vars) {
   $menu_tree_service = \Drupal::service('menu.link_tree');
-  foreach (['topright', 'main'] as $menu_name) {
-    $parameters = $menu_tree_service
-      ->getCurrentRouteMenuTreeParameters($menu_name);
-    $menu = $menu_tree_service->build(
-      $menu_tree_service->transform(
-        $menu_tree_service->load($menu_name, $parameters),
-        [
-          ['callable' => 'menu.default_tree_manipulators:checkAccess'],
-          ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
-        ]
-      )
-    );
+  foreach ([
+    'topright',
+    'main'
+  ] as $menu_name) {
+    $parameters = $menu_tree_service->getCurrentRouteMenuTreeParameters($menu_name);
+    $menu = $menu_tree_service->build($menu_tree_service->transform($menu_tree_service->load($menu_name, $parameters), [
+      [
+        'callable' => 'menu.default_tree_manipulators:checkAccess'
+      ],
+      [
+        'callable' => 'menu.default_tree_manipulators:generateIndexAndSort'
+      ]
+    ]));
     $vars['menu_' . $menu_name] = \Drupal::service('renderer')->render($menu);
   }
   $vars['search_form'] = '';
   if ($vars['logged_in']) {
-    $vars['search_form'] = $vars['logged_in'] ?
-      \Drupal::formBuilder()->getForm('\Drupal\search\Form\SearchBlockForm') :
-      '';
+    $vars['search_form'] = $vars['logged_in'] ? \Drupal::formBuilder()->getForm('\Drupal\search\Form\SearchBlockForm') : '';
     $vars['search_form']['actions']['submit']['#value'] = '';
   }
 
@@ -83,17 +52,18 @@ function skyseldulac_new_preprocess_page(&$vars) {
     '#uri' => theme_get_setting('logo.url'),
     '#alt' => t('Home'),
     '#attributes' => [
-      'id' => ['logo'],
+      'id' => [
+        'logo'
+      ]
     ],
     '#prefix' => '<a href="/">',
-    '#suffix' => '</a>',
+    '#suffix' => '</a>'
   ];
 
   // Allows hiding the site name & slogan if the logo contains them.
   if (!\Drupal::Config('skyseldulac_new.settings')->get('title_hide')) {
     $site_config = \Drupal::config('system.site');
-    $branding['site_name']['#markup'] =
-      "<div id=\"name-slogan\">
+    $branding['site_name']['#markup'] = "<div id=\"name-slogan\">
          <h1><a href=\"/\">" . $site_config->get('name') . "</a></h1>
          <div class = \"slogan\">" . $site_config->get('slogan') . "</div>
       </div>";
@@ -107,8 +77,9 @@ function skyseldulac_new_preprocess_page(&$vars) {
 function skyseldulac_new_theme_suggestions_menu_alter(array &$suggestions, array $variables) {
   // Récupérer les informations de suggestion de menu existantes
   // Ajouter une suggestion de menu personnalis￩e avec les informations re￧ues
-  $configs =  \Drupal::Config('skyseldulac_new.settings')->get();
-  if (isset($configs[$variables["menu_name"]]) && $configs[$variables["menu_name"]]) {
+  $configs = theme_get_setting('skyseldulac_new_menus');
+
+  if (!empty($configs[$variables["menu_name"]])) {
     $CustomSuggestions = 'menu__hbk_menu';
     $suggestions[] = $CustomSuggestions;
   }
