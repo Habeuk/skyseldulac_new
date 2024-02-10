@@ -11,3 +11,5 @@ menu-styling:
       css/themes/hbk-menu.css: {}
   js:
     js/hbk-menu.js: {}
+  dependencies:
+    - core/drupal
